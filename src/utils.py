@@ -5,7 +5,7 @@ from itertools import cycle, islice, chain, filterfalse
 TIME_INTERVAL_REGEX = re.compile('(\d\d:\d\d).?-.?(\d\d:\d\d)')
 
 
-def list_files_with_extensions(path, extensions, recursive=True):
+def list_files_with_extensions(path, extensions, recursive=False):
     for entry in os.scandir(path):
         if entry.name.lower().endswith(extensions) and entry.is_file():
             yield entry.path

@@ -65,7 +65,7 @@ Not hard, right? [See also example.yaml](/docs/example.yaml).
 
 **`shuffle: true/false`** — *(optional)* if set to `true`, shuffles the media files from each directory. If set to `false`, VLC Scheduler will get the files in alphabetic order. Default: `false`.
 
-**`recursive: true/false`** — *(optional)* if set to `true`, recurses into subfolders of each directory. Defaultis value of global config media_recursive which is itself defaulted to `false`.
+**`recursive: true/false`** — *(optional)* if set to `true`, recurses into subfolders of each directory. Default is value of global config media_recursive which is itself defaulted to `false`.
 
 **`special: true/false`** — *(optional)* if set to `true`, marks a directory as special. Special directories are meant to stay empty most of the time. When a media file is added to such directory, VLC Scheduler puts aside all non-special content and only plays that file until it’s removed from its directory. Default: `false`.
 
